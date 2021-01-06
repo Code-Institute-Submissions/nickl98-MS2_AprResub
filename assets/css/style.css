@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monoton&display=swap');
+
+
+
+/*** Title **/
+
+.page-title{
+    font-family: 'Monoton', cursive;
+    color: blueviolet;
+}
