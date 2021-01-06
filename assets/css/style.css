@@ -7,6 +7,8 @@
 .page-title{
     font-family: 'Monoton', cursive;
     color: #FF7D00;
+    text-align: center;
+    font-size: 4em;
 }
 
 * {
@@ -20,4 +22,11 @@ html  {
 body {
     margin: 0;
     background: radial-gradient(#FFECD1,#003742);
+}
+
+.game-info {
+    font-family: 'Bungee', cursive;
+    color: #FF7D00;
+    text-align: center;
+    font-size: 2em;
 }
