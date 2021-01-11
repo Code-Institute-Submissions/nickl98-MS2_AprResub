@@ -6,7 +6,7 @@
 
 .page-title{
     font-family: 'Monoton', cursive;
-    color: #FF7D00;
+    color: #ffffff;
     text-align: center;
     font-size: 4em;
     z-index: 1;
@@ -49,8 +49,8 @@ body {
 }
 
 .game-info {
-    font-family: 'Bungee', cursive;
-    color: #FF7D00;
+    font-family: 'Monoton', cursive;
+    color: #ffffff;
     text-align: center;
     font-size: 2em;
     z-index: 1;
