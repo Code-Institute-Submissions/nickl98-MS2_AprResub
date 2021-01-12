@@ -37,6 +37,13 @@ html  {
     width: 100%;
 }
 
+.direction_btn{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    
+}
+
 body {
     margin: 0;
     
