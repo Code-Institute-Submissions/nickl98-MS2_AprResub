@@ -55,6 +55,14 @@ body {
     z-index: 1;
 }
 
+.front-img {
+  align-self: flex-start;
+
+}
+.back-img {
+  position: relative;
+
+}
 .game-info {
     font-family: 'Monoton', cursive;
     color: #ffffff;
@@ -62,11 +70,39 @@ body {
     font-size: 2em;
     z-index: 1;
 }
+.card:hover .card-back {
+    transform: rotateY(-180deg);
+}
+.card:hover .card-front {
+    transform: rotateY(0);
+}
 
+.card-front:hover .card-value {
+  transform: scale(1);
+}
 .card {
     background-color: black;
     height: 175px;
     width: 125px;
+}
+.card-front {
+
+  transform: rotateY(180deg);
+}
+.card-back {
+ 
+  transform: rotateY(0); 
+}
+.card-face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
 }
 
 .card-container {
@@ -75,5 +111,5 @@ body {
  grid-gap: 10px;
  margin: 50px;
  justify-content: center;
- z-index: 1;
+ perspective: 500px;
 }
