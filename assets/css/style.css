@@ -10,6 +10,7 @@
     text-align: center;
     font-size: 4em;
     z-index: 1;
+    margin: 0 auto;
 }
 
 * {
@@ -55,13 +56,18 @@ body {
     z-index: 1;
 }
 
+
+
+
+
 .front-img {
   align-self: flex-start;
+  transition: transform 100ms ease-in-out;
 
 }
 .back-img {
   position: relative;
-
+    transition: transform 100ms ease-in-out;
 }
 .game-info {
     font-family: 'Monoton', cursive;
@@ -70,16 +76,32 @@ body {
     font-size: 2em;
     z-index: 1;
 }
-.card:hover .card-back {
+.card.visible .card-back {
     transform: rotateY(-180deg);
 }
-.card:hover .card-front {
+.card.visible .card-front {
     transform: rotateY(0);
 }
 
-.card-front:hover .card-value {
+.card-front:hover .back-img {
   transform: scale(1);
 }
+.card.matched .back-img {
+    animation: dance 1s linear infinite 500ms; 
+}
+
+@keyframes dance {
+    0%, 100% {
+        transform:  rotate(0);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+}
+
 .card {
     background-color: black;
     height: 175px;
@@ -109,7 +131,56 @@ body {
  display: grid;
  grid-template-columns: repeat(4, auto);
  grid-gap: 10px;
- margin: 50px;
+ margin: 50px auto;
  justify-content: center;
  perspective: 500px;
+}
+
+.overlay-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: #ffffff;
+    font-family: 'Monoton', cursive;
+    transition: background-color 500ms, font-size 500ms;
+}
+
+.overlay-text.visible {
+    display: flex;
+    animation: overlay-grow 500ms forwards;
+    text-align: center;
+    
+   
+}
+
+.overlay-text-small{
+    font-size: .2em;
+    text-align: center;
+    
+}
+ @keyframes overlay-grow {
+     from {
+         background-color: rgba(0,0,0,0);
+     }
+     to {
+         background-color: rgba(0,0,0,.8);
+         font-size: 10em ;
+     }
+ }
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(2, auto)
+  }
+
+  .card-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
