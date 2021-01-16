@@ -92,6 +92,7 @@ class MixOrMatch {
     victory (){
         clearInterval(this.countDown);
         document.getElementById('victory-text').classList.add('visible');
+        this.hideCards();
     }
 
     //This function here adds the amount of flips made and keeps track of that number
@@ -117,7 +118,7 @@ class MixOrMatch {
             this.cardMatch(card, this.cardToCheck);
         else 
             this.cardMismatch(card, this.cardToCheck);
-
+        //once its done checking I set the funtion to null so no changes need to made aferwards
         this.cardToCheck = null;
     }
     //these are the functions that controll what happens once there is a match buy passing through each card (card 1 and card 2)
@@ -128,9 +129,11 @@ class MixOrMatch {
         card1.classList.add('matched');
         card2.classList.add('matched');
         this.audioController.match();
-        if(this.matchedCards.length === this.cardsArray)
+        if(this.matchedCards.length === this.cardsArray.length)
         this.victory();
     }
+
+    //if you get two cards that match they will face and stay upwards if not they go back to flipped over after a a seocnd
         cardMismatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {
@@ -153,10 +156,11 @@ class MixOrMatch {
         }
     }
 
-    //this statment here checks and sees if the statment is true that it will be able to be flipeed  
+    //this statment here checks and sees if the statment is true that it will be able to be flipeed and 
+    //wont let you flip any cards till the cards are shuffled
     canFlipCard(card){
-        return true;
-        //return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+        
+        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
 }
 
