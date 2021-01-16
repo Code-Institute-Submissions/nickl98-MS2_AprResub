@@ -88,6 +88,11 @@ class MixOrMatch {
         this.audioController.gameOver();
         document.getElementById('game-over-text').classList.add('visible');
     }
+    //this works in a similar fashion like the game over function; just shows a diffrent text overlay
+    victory (){
+        clearInterval(this.countDown);
+        document.getElementById('victory-text').classList.add('visible');
+    }
 
     //This function here adds the amount of flips made and keeps track of that number
     flipCard(card){
@@ -97,10 +102,47 @@ class MixOrMatch {
             this.ticker.innerText = this.totalClicks;
             card.classList.add('visible');
 
-            //if statment that checks if the card is a match
+            //matching card function
+            if(this.cardToCheck)
+                //checking for match
+                this.checkForCardMatch(card);
+            else
+                this.cardToCheck = card;
+            
         }
     }
+    //this will check and see if this card matches the correct source of the other card and then choose what todo next
+   checkForCardMatch(card) {
+        if(this.getCardType(card) === this.getCardType(this.cardToCheck))
+            this.cardMatch(card, this.cardToCheck);
+        else 
+            this.cardMismatch(card, this.cardToCheck);
 
+        this.cardToCheck = null;
+    }
+    //these are the functions that controll what happens once there is a match buy passing through each card (card 1 and card 2)
+    //then also plkaying the aduio controller whenever there is a matched card
+    cardMatch(card1, card2){
+        this.matchedCards.push(card1);
+        this.matchedCards.push(card2);
+        card1.classList.add('matched');
+        card2.classList.add('matched');
+        this.audioController.match();
+        if(this.matchedCards.length === this.cardsArray)
+        this.victory();
+    }
+        cardMismatch(card1, card2) {
+        this.busy = true;
+        setTimeout(() => {
+            card1.classList.remove('visible');
+            card2.classList.remove('visible');
+            this.busy = false;
+        }, 1000);
+    }
+    //this function is searching to see if a card matches the other cards value
+    getCardType(card) {
+        return card.getElementsByClassName('front-img')[0].src;
+    }
     //this function here shuffles the cards in a random order each game
 
      shuffleCards(cardsArray) { // Fisher-Yates Shuffle Algorithm.
@@ -122,7 +164,7 @@ class MixOrMatch {
 function ready(){
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(5, cards);
+    let game = new MixOrMatch(100, cards);
 
     //this for each loop allows when the user clicks on the screen the game will begin and the overlay disappears
  overlays.forEach(overlay => {
