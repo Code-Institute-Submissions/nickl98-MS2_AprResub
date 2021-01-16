@@ -69,10 +69,10 @@ class MixOrMatch {
     //this function here shuffles the cards in a random order each game
 
      shuffleCards(cardsArray) { // Fisher-Yates Shuffle Algorithm.
-        for (let i = cardsArray.length - 1; i > 0; i--) {
+        for (let i = this.cardsArray.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i + 1));
-            cardsArray[randIndex].style.order = i;
-            cardsArray[i].style.order = randIndex;
+            this.cardsArray[randIndex].style.order = i;
+            this.cardsArray[i].style.order = randIndex;
         }
     }
 
