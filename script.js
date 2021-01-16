@@ -38,8 +38,8 @@ class MixOrMatch {
     constructor(totalTime, cards){
         this.cardsArray = cards;
         this.totalTime = totalTime;
-        this.timeRemaining = totalTime;
-        this.timer = document.getElementById('time-left');
+        this.time_left = totalTime;
+        this.timer = document.getElementById('time_left');
         this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
     }
@@ -51,7 +51,42 @@ class MixOrMatch {
         this.matchedCards = [];
         this.busy = true;
 
-        this.shuffleCards();
+        //this function waits 500mil sec before it starts up
+        setTimeout(() =>{
+            this.audioController.startMusic();
+            this.shuffleCards();
+            this.countDown = this.startCountDown();
+            this.busy = false;
+        }, 500);
+        //here we are restarting the timer and clicks/flips
+        this.hideCards();
+        this.timer.innerText = this.time_left;
+        this.ticker.innerText = this.totalClicks;
+    }
+
+    //this function hides the cards once they are matched
+    hideCards(){
+        this.cardsArray.forEach(card =>{
+            card.classList.remove('visible');
+            card.classList.remove('matched');
+        });
+
+    }
+    startCountDown () {
+        return setInterval(() => {
+            this.time_left--;
+            this.timer.innerText = this.time_left;
+            if(this.time_left === 0){
+                this.gameOver();
+            }
+        }, 1000);
+    }
+
+    //once this function is classed it first clears out the time out funbctuon and then the gameover class is called and the overlay gameover pops up
+    gameOver(){
+        clearInterval(this.countDown);
+        this.audioController.gameOver();
+        document.getElementById('game-over-text').classList.add('visible');
     }
 
     //This function here adds the amount of flips made and keeps track of that number
@@ -87,7 +122,7 @@ class MixOrMatch {
 function ready(){
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(100, cards);
+    let game = new MixOrMatch(5, cards);
 
     //this for each loop allows when the user clicks on the screen the game will begin and the overlay disappears
  overlays.forEach(overlay => {
