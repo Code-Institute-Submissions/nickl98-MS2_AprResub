@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monoton&display=swap');
 
-
-
 /*** Title **/
 
 .page-title{
     font-family: 'Monoton', cursive;
-    color: #ffffff;
+    color: #bf00ff;
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
     z-index: 1;
     margin: 0 auto;
 }
@@ -57,9 +55,6 @@ body {
 }
 
 
-
-
-
 .front-img {
   align-self: flex-start;
   transition: transform 100ms ease-in-out;
@@ -71,7 +66,7 @@ body {
 }
 .game-info {
     font-family: 'Monoton', cursive;
-    color: #ffffff;
+    color: #bf00ff;
     text-align: center;
     font-size: 2em;
     z-index: 1;
@@ -146,7 +141,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 100;
-    color: #ffffff;
+    color: #bf00ff;
     font-family: 'Monoton', cursive;
     transition: background-color 500ms, font-size 500ms;
 }

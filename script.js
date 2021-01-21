@@ -6,7 +6,7 @@ class AudioController {
         this.matchSound = new Audio('assets/sounds/Match-sound.mp3');
         this.victorySound = new Audio('assets/sounds/victory.mp3');
         this.gameOverSound = new Audio('assets/sounds/Gameover-sound.mp3');
-        this.bgMusic.volume = 0.5;
+        this.bgMusic.volume = 0.25;
         this.bgMusic.loop = true;
     }
 
@@ -72,6 +72,8 @@ class MixOrMatch {
         });
 
     }
+
+    //this function here controlls how the timwer ticks down till time is over
     startCountDown () {
         return setInterval(() => {
             this.time_left--;
