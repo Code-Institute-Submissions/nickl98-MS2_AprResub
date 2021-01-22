@@ -11,6 +11,8 @@
     margin: 0 auto;
 }
 
+/** Page Sizing**/
+
 * {
     box-sizing: border-box;
 }
@@ -54,6 +56,7 @@ body {
     z-index: 1;
 }
 
+/** Card details**/
 
 .front-img {
   align-self: flex-start;
@@ -130,6 +133,7 @@ body {
  justify-content: center;
  perspective: 500px;
 }
+/*** Text Overlays **/
 
 .overlay-text {
     position: fixed;
@@ -168,6 +172,9 @@ body {
          font-size: 10em ;
      }
  }
+
+
+/**Media Quries***/
 
 @media (max-width: 600px) {
   .card-container {
