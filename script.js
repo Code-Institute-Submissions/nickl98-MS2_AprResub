@@ -10,7 +10,7 @@ class AudioController {
         this.bgMusic.loop = true;
     }
 
-    //these classes below are choosen when the music
+    //these functions below is what makes the music deploy
     startMusic(){
         this.bgMusic.play();
     }
@@ -33,6 +33,7 @@ class AudioController {
         this.gameOverSound.play();
     }
 }
+
 
 class MixOrMatch {
     constructor(totalTime, cards){
@@ -84,7 +85,8 @@ class MixOrMatch {
         }, 1000);
     }
 
-    //once this function is classed it first clears out the time out funbctuon and then the gameover class is called and the overlay gameover pops up
+    //once this function is called, it first clears out the time function and then
+    //the gameover function is called and the gameover overlay pops up
     gameOver(){
         clearInterval(this.countDown);
         this.audioController.gameOver();
@@ -123,7 +125,7 @@ class MixOrMatch {
         //once its done checking I set the funtion to null so no changes need to made aferwards
         this.cardToCheck = null;
     }
-    //these are the functions that controll what happens once there is a match buy passing through each card (card 1 and card 2)
+    //these are the functions that controll what happens once there is a match by passing through each card (card 1 and card 2)
     //then also plkaying the aduio controller whenever there is a matched card
     cardMatch(card1, card2){
         this.matchedCards.push(card1);
