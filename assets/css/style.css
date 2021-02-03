@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 /*** Title **/
 
 .page-title{
-    font-family: 'Monoton', cursive;
+    font-family: 'Luckiest Guy', cursive;
     color: #bf00ff;
     text-align: center;
     font-size: 5em;
     z-index: 1;
     margin: 0 auto;
+    text-shadow: 2px 1px #bf00ff ;
 }
 
 /** Page Sizing**/
@@ -68,11 +69,12 @@ body {
     transition: transform 100ms ease-in-out;
 }
 .game-info {
-    font-family: 'Monoton', cursive;
+    font-family: 'Luckiest Guy', cursive;
     color: #bf00ff;
     text-align: center;
     font-size: 2em;
     z-index: 1;
+    text-shadow: 2px 1px #bf00ff ;
 }
 .card.visible .card-back {
     transform: rotateY(-180deg);
