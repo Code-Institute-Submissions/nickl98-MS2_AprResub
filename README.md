@@ -11,11 +11,9 @@ It's not the hardest game you may come across however, the cards change location
 
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are Code Insititue gray, black, white, gold.
+        -   The two main colors used are purple, blue, and tan.
     -   #### Typography
-        -   The Roboto, and Roboto Slab font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. 
-    -   #### Imagery
-        -   Imagery is important. I wanted to have users imagine what point we are trying to make with our service. Giving users is an important goal.
+        -   The Luckiest Guy font is the main font used throughout the whole site. 
 
 *   ### Wireframes
 
