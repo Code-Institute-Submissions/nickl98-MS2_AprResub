@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 
 /*** Title **/
 
-.page-title{
-    font-family: 'Luckiest Guy', cursive;
+.page-title {
+    font-family: "Luckiest Guy", cursive;
     color: #bf00ff;
     text-align: center;
     font-size: 5em;
     z-index: 1;
     margin: 0 auto;
-    
 }
 
 /** Page Sizing**/
@@ -18,37 +17,34 @@
     box-sizing: border-box;
 }
 
-html  {
+html {
     min-height: 100vh;
 }
 .section {
- position: relative;
- width: 100%;
- height: 100vh;
- display: flex;
- align-items: center;
- justify-content: center;
- overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-
-.video-container{
+.video-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.direction_btn{
+.direction_btn {
     z-index: 1;
     position: relative;
     text-align: center;
-    
 }
 
 body {
     margin: 0;
-    
 }
 .game-info-container {
     grid-column: 1 / -1;
@@ -60,21 +56,19 @@ body {
 /** Card details**/
 
 .front-img {
-  align-self: flex-start;
-  transition: transform 100ms ease-in-out;
-
+    align-self: flex-start;
+    transition: transform 100ms ease-in-out;
 }
 .back-img {
-  position: relative;
+    position: relative;
     transition: transform 100ms ease-in-out;
 }
 .game-info {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     color: #bf00ff;
     text-align: center;
     font-size: 2em;
     z-index: 1;
-    
 }
 .card.visible .card-back {
     transform: rotateY(-180deg);
@@ -84,15 +78,16 @@ body {
 }
 
 .card-front:hover .back-img {
-  transform: scale(1);
+    transform: scale(1);
 }
 .card.matched .back-img {
-    animation: dance 1s linear infinite 500ms; 
+    animation: dance 1s linear infinite 500ms;
 }
 
 @keyframes dance {
-    0%, 100% {
-        transform:  rotate(0);
+    0%,
+    100% {
+        transform: rotate(0);
     }
     25% {
         transform: rotate(-30deg);
@@ -108,32 +103,30 @@ body {
     width: 125px;
 }
 .card-front {
-
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 .card-back {
- 
-  transform: rotateY(0); 
+    transform: rotateY(0);
 }
 .card-face {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: transform 500ms ease-in-out;
-  backface-visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 500ms ease-in-out;
+    backface-visibility: hidden;
 }
 
 .card-container {
- display: grid;
- grid-template-columns: repeat(4, auto);
- grid-gap: 10px;
- margin: 50px auto;
- justify-content: center;
- perspective: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px auto;
+    justify-content: center;
+    perspective: 500px;
 }
 /*** Text Overlays **/
 
@@ -148,7 +141,7 @@ body {
     align-items: center;
     z-index: 100;
     color: #bf00ff;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     transition: background-color 500ms, font-size 500ms;
 }
 
@@ -156,63 +149,57 @@ body {
     display: flex;
     animation: overlay-grow 500ms forwards;
     text-align: center;
-    
-   
 }
 
-.overlay-text-small{
-    font-size: .2em;
+.overlay-text-small {
+    font-size: 0.2em;
     text-align: center;
-    
 }
- @keyframes overlay-grow {
-     from {
-         background-color: rgba(0,0,0,0);
-     }
-     to {
-         background-color: rgba(0,0,0,.8);
-         font-size: 10em ;
-     }
- }
-
+@keyframes overlay-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 10em;
+    }
+}
 
 /**Media Quries***/
 
 @media (max-width: 600px) {
-  .card-container {
-    grid-template-columns: repeat(2, auto)
-  }
-
-  .page-title{
-    font-family: 'Luckiest Guy', cursive;
-    color: #bf00ff;
-    text-align: center;
-    font-size: 3em;
-    z-index: 1;
-    margin: 0 auto;
-    padding-top: 50px;
-    
-}
-
-.section {
-    height: 100vh;
-    width: 50vh;
-}
-
     .card-container {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    margin: 0 auto;
-    justify-content: center;
-    perspective: 600px;
+        grid-template-columns: repeat(2, auto);
     }
 
-  .card-info-container {
-    flex-direction: column;
-    align-items: center;
-    padding-right: 35px;
-    padding-left: 35px;
-  }
+    .page-title {
+        font-family: "Luckiest Guy", cursive;
+        color: #bf00ff;
+        text-align: center;
+        font-size: 3em;
+        z-index: 1;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
 
+    .section {
+        height: 100vh;
+        width: 50vh;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 10px;
+        margin: 0 auto;
+        justify-content: center;
+        perspective: 600px;
+    }
+
+    .card-info-container {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 35px;
+        padding-left: 35px;
+    }
 }
