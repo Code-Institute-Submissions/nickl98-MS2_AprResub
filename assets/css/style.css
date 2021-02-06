@@ -4,7 +4,7 @@
 
 .page-title {
     font-family: "Luckiest Guy", cursive;
-    color: #bf00ff;
+    color: #fff;
     text-align: center;
     font-size: 5em;
     z-index: 1;
@@ -65,7 +65,7 @@ body {
 }
 .game-info {
     font-family: "Luckiest Guy", cursive;
-    color: #bf00ff;
+    color: #fff;
     text-align: center;
     font-size: 2em;
     z-index: 1;
