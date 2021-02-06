@@ -140,7 +140,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 100;
-    color: #bf00ff;
+    color: #fff;
     font-family: "Luckiest Guy", cursive;
     transition: background-color 500ms, font-size 500ms;
 }
@@ -174,7 +174,7 @@ body {
 
     .page-title {
         font-family: "Luckiest Guy", cursive;
-        color: #bf00ff;
+        color: #fff;
         text-align: center;
         font-size: 3em;
         z-index: 1;
@@ -212,4 +212,8 @@ body {
         padding-right: 35px;
         padding-left: 35px;
     }
+    .overlay-text-small {
+    font-size: 0.1em;
+    text-align: center;
+}
 }

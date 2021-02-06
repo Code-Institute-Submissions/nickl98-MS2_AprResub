@@ -3,7 +3,7 @@
 [View the live project here.](https://nickl98.github.io/MS2)
 
 For this project I decied to make a fun lttle matching game with diffrent types of technology you come across in your day-to-day life. 
-It's not the hardest game you may come across however, the cards change location everytime you start over. Well, enjoy the low-tech music, take a break nd enjoy the game.
+It's not the hardest game you may come across however, the cards change location everytime you start over. Well, enjoy take a break and enjoy the game.
  
 <h2 align="center"><img src = "assets/pictures/Screenshots/RepsonsivePic.png"></h2>
 
@@ -11,7 +11,7 @@ It's not the hardest game you may come across however, the cards change location
 
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colors used are purple, blue, and tan.
+        -   The two main colors used are white, purple, blue, and tan.
     -   #### Typography
         -   The Luckiest Guy font is the main font used throughout the whole site. 
 
@@ -53,4 +53,66 @@ It's not the hardest game you may come across however, the cards change location
     - Adobe XD [wireframes](https://adobe.xd.com/) during the design process.
 9. [JavaScript:](https://www.JavaScript.com/)
     - JavaScript [wireframes](https://www.JavaScript.com/) JavaScript was a important part of this program. Without it the game would simply not work.
+
+## Testing
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/nickl98/Roula/blob/master/images/Validation%20Pictures/html-validation.png)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/nickl98/Roula/blob/master/images/Validation%20Pictures/css-validation.png)
+
+### Testing Section
+
+
+-   #### Frequent User Goals
+
+    1. As a Frequent User, I want to check to see if there are any newly added updates.
+
+
+    2. As a Frequent User, I want to see changes and see whem the new features are coming out.
+        1. At the bottom of every page their is a footer where I can see Roula Socail Media links.
+        2. To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
+        3. There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
+
+### Further Testing
+
+-   The Website was tested on Google Chrome.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPhoneX.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
+-   Friends and family members were asked to review the site give thier insight in what they wanted to see.
+
+### Known Bugs
+
+-   On some tablet displays the card deck is not displayed correctly. 
+-   There is a tiny bit of padding on the right side of the screen. 
+
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages.
+
+- You can view the project on any device you may use, just use the link at the top of the page.
+
+
+
+## Credits
+
+### Code
+
+-   The top jumbotron image was made by me.
+
+-   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly using their Grid system, as well as card decks.
+
+
+### Content
+
+-   All content was written by the developer.
+
+
+
+### Media
+
+-   Some images were edited by me; others were sourced from. https://www.pexels.com/
 
