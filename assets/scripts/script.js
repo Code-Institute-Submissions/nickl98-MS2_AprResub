@@ -10,7 +10,7 @@ class AudioController {
         this.bgMusic.loop = true;
     }
 
-    //these functions below is what makes the music deploy
+    //these functions below make the music deploy
     startMusic() {
         this.bgMusic.play();
     }
@@ -72,7 +72,7 @@ class MixOrMatch {
         });
     }
 
-    //this function here controlls how the timwer ticks down till time is over
+    //this function controlls how the ticks decrease till time is over
     startCountDown() {
         return setInterval(() => {
             this.time_left--;
@@ -112,14 +112,16 @@ class MixOrMatch {
             else this.cardToCheck = card;
         }
     }
-    //this will check and see if this card matches the correct source of the other card and then choose what todo next
+    //this will check and see if this card matches the correct source of 
+    //the other card and then choose what todo next
     checkForCardMatch(card) {
         if (this.getCardType(card) === this.getCardType(this.cardToCheck)) this.cardMatch(card, this.cardToCheck);
         else this.cardMismatch(card, this.cardToCheck);
         //once its done checking I set the funtion to null so no changes need to made aferwards
         this.cardToCheck = null;
     }
-    //these are the functions that controll what happens once there is a match by passing through each card (card 1 and card 2)
+    //these are the functions that controll what happens once there is a match
+    // by passing through each card (card 1 and card 2)
     //then also plkaying the aduio controller whenever there is a matched card
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
@@ -130,7 +132,8 @@ class MixOrMatch {
         if (this.matchedCards.length === this.cardsArray.length) this.victory();
     }
 
-    //if you get two cards that match they will face and stay upwards if not they go back to flipped over after a a seocnd
+    //if you get two cards that match they will face up and stay upwards 
+    //if not they go back to flipped over after a a seocnd
     cardMismatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {
@@ -143,10 +146,10 @@ class MixOrMatch {
     getCardType(card) {
         return card.getElementsByClassName("front-img")[0].src;
     }
-    //this function here shuffles the cards in a random order each game
 
+    //this function shuffles the cards in a random order each game
     shuffleCards(cardsArray) {
-        // Fisher-Yates Shuffle Algorithm.
+       
         for (let i = this.cardsArray.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i + 1));
             this.cardsArray[randIndex].style.order = i;
@@ -154,14 +157,14 @@ class MixOrMatch {
         }
     }
 
-    //this statment here checks and sees if the statment is true that it will be able to be flipeed and
-    //wont let you flip any cards till the cards are shuffled
+    //this statment checks and sees if the statment is true then, it will be able to be flipeed and
+    //wont let you flip any cards till the cards are back to flipped over
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
 }
 
-//this is pulling the overlays the gameover, victory and Click to startoverlay
+//this is pulling the overlays the gameover, victory, and click to startoverlay
 function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
