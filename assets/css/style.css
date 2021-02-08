@@ -5,6 +5,7 @@
 .page-title {
     font-family: "Luckiest Guy", cursive;
     color: #fff;
+    text-shadow: 2px 2px #663399;
     text-align: center;
     font-size: 5em;
     z-index: 1;
@@ -66,6 +67,7 @@ body {
 .game-info {
     font-family: "Luckiest Guy", cursive;
     color: #fff;
+    text-shadow: 2px 2px #663399;
     text-align: center;
     font-size: 2em;
     z-index: 1;
@@ -198,7 +200,7 @@ body {
     .card-container {
         display: grid;
         grid-template-columns: repeat(3, auto);
-        
+
         margin: 0 auto;
         justify-content: center;
         perspective: 600px;
@@ -213,7 +215,7 @@ body {
         padding-left: 35px;
     }
     .overlay-text-small {
-    font-size: 0.1em;
-    text-align: center;
-}
+        font-size: 0.1em;
+        text-align: center;
+    }
 }

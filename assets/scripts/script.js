@@ -6,7 +6,7 @@ class AudioController {
         this.matchSound = new Audio("assets/sounds/Match-sound.mp3");
         this.victorySound = new Audio("assets/sounds/victory.mp3");
         this.gameOverSound = new Audio("assets/sounds/Gameover-sound.mp3");
-        this.bgMusic.volume = 0
+        this.bgMusic.volume = 0;
         this.bgMusic.loop = true;
     }
 
@@ -112,7 +112,7 @@ class MixOrMatch {
             else this.cardToCheck = card;
         }
     }
-    //this will check and see if this card matches the correct source of 
+    //this will check and see if this card matches the correct source of
     //the other card and then choose what todo next
     checkForCardMatch(card) {
         if (this.getCardType(card) === this.getCardType(this.cardToCheck)) this.cardMatch(card, this.cardToCheck);
@@ -132,7 +132,7 @@ class MixOrMatch {
         if (this.matchedCards.length === this.cardsArray.length) this.victory();
     }
 
-    //if you get two cards that match they will face up and stay upwards 
+    //if you get two cards that match they will face up and stay upwards
     //if not they go back to flipped over after a a seocnd
     cardMismatch(card1, card2) {
         this.busy = true;
@@ -149,7 +149,6 @@ class MixOrMatch {
 
     //this function shuffles the cards in a random order each game
     shuffleCards(cardsArray) {
-       
         for (let i = this.cardsArray.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i + 1));
             this.cardsArray[randIndex].style.order = i;
