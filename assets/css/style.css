@@ -131,7 +131,7 @@ body {
     perspective: 500px;
 }
 
-.collapse .navbar-collapse {
+.navbar{
     z-index: 1;
 }
 /*** Text Overlays **/
