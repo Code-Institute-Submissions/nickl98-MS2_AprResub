@@ -19,156 +19,36 @@
             </div>
 
             <!-- This contains the title and the diffrent overlay texts -->
-            <h1 class="page-title col-md-auto">Match-The-Tech</h1>
+            <h1 class="page-title col-md-auto">Welcome!</h1>
 
-            <div class="overlay-text row justify-content-md-center visible">
-                Click to Start
-            </div>
-            <div id="game-over-text" class="overlay-text row justify-content-md-center">
-                GAME OVER
-                <span class="overlay-text-small row justify-content-md-center">Click to Restart</span>
-            </div>
-            <div id="victory-text" class="overlay-text row justify-content-md-center">
-                VICTORY
-                <span class="overlay-text-small row justify-content-md-center">Click to Restart</span>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-            <!-- Here is where the timer and flips belong -->
-            <div class="card-container">
-                <div class="game-info-container">
-                    <div class="game-info">Time : <span id="time_left">100</span></div>
-                    <div class="game-info">Flips : <span id="flips">0</span></div>
-                </div>
-                <!-- This is every single card with pictures for the back and front of each card -->
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img class="back-img" src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/iphone.png" alt="Picture of a Iphone" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/code.png" alt="Picture of Code" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/old-mac.png" alt="Picture of a Old Mac" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/robot.png" alt="Picture of Code" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/drone.png" alt="Picture of a drone" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/headphones.png" alt="Picture of headphones" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/vr-pic.png" alt="Picture of a VR-Headset" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/prostetic_arm.png" alt="Picture of Prostetic Arm" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/code.png" alt="Picture of Code" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/robot.png" alt="Picture of Robot" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/iphone.png" alt="Picture of Iphone" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/old-mac.png" alt="Picture of Old Mac" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/headphones.png" alt="Picture of Headphones" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/vr-pic.png" alt="Picture of VR-Headset" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/drone.png" alt="Picture of drone" />
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-back card-face">
-                        <img src="assets/pictures/card-back2.jpg" alt="card-back" />
-                    </div>
-                    <div class="card-front card-face">
-                        <img class="front-img" src="assets/pictures/prostetic_arm.png" alt="Picture of Prostetic Arm" />
-                    </div>
-                </div>
-            </div>
+         
+            
+            
+           
         </div>
+        
     </body>
 </html>
