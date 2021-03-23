@@ -1,11 +1,3 @@
-//Bootstrap collapsing navbar
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarSupportedContent')
-const bsCollapse = new bootstrap.Collapse(menuToggle)
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
-})
-
 
 //This is the class where the music is deployed from
 class AudioController {
