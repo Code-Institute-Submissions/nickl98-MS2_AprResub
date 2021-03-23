@@ -157,6 +157,20 @@ body {
     margin-left: auto !important;
     padding-right: 30px;
 }
+
+/** Page content**/
+.page {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.page blockquote {
+    text-align: center;
+  align-self: center;
+  z-index: 1;
+  background-color: #fff;
+}
 /*** Text Overlays **/
 
 .overlay-text {
