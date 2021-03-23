@@ -130,9 +130,17 @@ body {
     justify-content: center;
     perspective: 500px;
 }
+/**** Nav Bar elements***/
 
 .navbar{
     z-index: 1;
+}
+
+.navbar-brand{
+    font-family: "Luckiest Guy", cursive;
+}
+.nav-link{
+    font-family: "Luckiest Guy", cursive;
 }
 /*** Text Overlays **/
 
@@ -179,13 +187,14 @@ body {
     }
 
     .page-title {
+        display: none;
         font-family: "Luckiest Guy", cursive;
         color: #fff;
         text-align: center;
         font-size: 3em;
         z-index: 1;
         margin: 0 auto;
-        padding-top: 50px;
+        padding-top: 150px;
     }
 
     .section {
