@@ -158,6 +158,9 @@ body {
     padding-right: 30px;
 }
 
+.bg-light {
+    color: rgb(206, 206, 206);
+}
 /** Page content**/
 .page {
     font-family: "Luckiest Guy", cursive;
@@ -178,6 +181,17 @@ text-align: center;
   background-color: rgb(206, 206, 206);
   opacity: 0.8;
   height: 50vh;
+}
+
+.card-settings {
+    z-index: 1;
+    background-color: rgb(206, 206, 206);
+    opacity: 0.8;
+     margin: 0 auto;
+    padding-left: 250px;
+    padding-right: 250px;
+    width: 50%;
+    height: 50vh;
 }
 /*** Text Overlays **/
 
