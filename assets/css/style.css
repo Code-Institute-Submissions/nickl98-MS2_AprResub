@@ -160,14 +160,19 @@ body {
 
 /** Page content**/
 .page {
-  display: flex;
-  align-items: center;
-  z-index: 1;
+    font-family: "Luckiest Guy", cursive;
+    color: #bababa;
+    text-shadow: 2px 2px #663399;
+    text-align: center;
+    font-size: 1em;
+    z-index: 1;
+    margin: 0 auto;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
 .page blockquote {
-    text-align: center;
-  align-self: center;
+text-align: center;
   z-index: 1;
   background-color: #fff;
 }
