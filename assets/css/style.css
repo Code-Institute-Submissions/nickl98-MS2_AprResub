@@ -185,14 +185,27 @@ text-align: center;
 
 .card-settings {
     z-index: 1;
-    background-color: none;
+    background-color: gray;
+    opacity: .8;
     margin: 0 auto;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 150px;
+    padding-right: 150px;
     width: 50%;
-    height: 50vh;
+    height: 60vh;
+}
+.card-settings-wrapper {
+    opacity: 1;
+    z-index: 2;
 }
 
+li {
+    font-size: 25px;
+    font-family: "Luckiest Guy", cursive;
+    color: #fff;
+    text-shadow: 2px 2px #663399;
+    padding-top: 15px;
+
+}
 
 
 /*** Text Overlays **/
