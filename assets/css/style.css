@@ -185,14 +185,16 @@ text-align: center;
 
 .card-settings {
     z-index: 1;
-    background-color: rgb(206, 206, 206);
-    opacity: 0.8;
-     margin: 0 auto;
+    background-color: none;
+    margin: 0 auto;
     padding-left: 250px;
     padding-right: 250px;
     width: 50%;
     height: 50vh;
 }
+
+
+
 /*** Text Overlays **/
 
 .overlay-text {
