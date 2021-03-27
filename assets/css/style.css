@@ -206,7 +206,16 @@ li {
     padding-top: 15px;
 
 }
+/***Card settings buttons***/
+.btn-color {
+    color: #663399;
+    
+}
 
+.button-container {
+    text-align: center;
+    padding-bottom: 15px;
+}
 
 /*** Text Overlays **/
 
