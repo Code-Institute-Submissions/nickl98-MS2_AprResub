@@ -98,6 +98,8 @@ class MixOrMatch {
         this.hideCards();
     }
 
+    
+
     //This function here adds the amount of flips made and keeps track of that number
     flipCard(card) {
         if (this.canFlipCard(card)) {
