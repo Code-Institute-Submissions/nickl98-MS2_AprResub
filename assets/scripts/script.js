@@ -35,6 +35,15 @@ class AudioController {
     }
 }
 
+function mute(){
+              if(document.getElementById('background_audio').muted == false){
+                document.getElementById('background_audio').muted = true;
+              } else {
+                document.getElementById('background_audio').muted = false;
+              }
+
+    }
+
 class MixOrMatch {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
@@ -192,3 +201,5 @@ if (document.readyState === "loading") {
 } else {
     ready();
 }
+
+
