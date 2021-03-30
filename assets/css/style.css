@@ -129,6 +129,7 @@ body {
     margin: 50px auto;
     justify-content: center;
     perspective: 500px;
+    
 }
 /**** Nav Bar elements***/
 
@@ -257,9 +258,6 @@ li {
 /**Media Quries***/
 
 @media (max-width: 600px) {
-    .card-container {
-        grid-template-columns: repeat(2, auto);
-    }
 
     .page-title {
         display: none;
@@ -287,13 +285,10 @@ li {
 
     .card-container {
         display: grid;
-        grid-template-columns: repeat(3, auto);
-
+        grid-template-columns: repeat(4, 4);
         margin: 0 auto;
         justify-content: center;
-        perspective: 600px;
-        padding-right: 20px;
-        padding-left: 20px;
+        zoom: .6;
     }
 
     .card-info-container {
@@ -308,9 +303,6 @@ li {
     }
 }
 @media (max-width: 800px) {
-    .card-container {
-        grid-template-columns: repeat(2, auto);
-    }
 
     .page-title {
         font-family: "Luckiest Guy", cursive;
@@ -324,7 +316,7 @@ li {
 
     .section {
         height: 100vh;
-        width: 50vh;
+        width: 100%;
     }
 
     .game-info-container {
@@ -337,7 +329,7 @@ li {
 
     .card-container {
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(4, auto);
 
         margin: 0 auto;
         justify-content: center;
