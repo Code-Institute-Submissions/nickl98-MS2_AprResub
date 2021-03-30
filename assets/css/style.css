@@ -19,9 +19,7 @@
     
 }
 
-html {
-    min-height: 100vh;
-}
+
 html,body
 {
     width: 100%;
@@ -60,9 +58,6 @@ html,body
     text-align: center;
 }
 
-body {
-    margin: 0;
-}
 .game-info-container {
     grid-column: 1 / -1;
     display: flex;
@@ -151,8 +146,12 @@ body {
 
 .navbar{
     z-index: 1;
+    width: 100%;
+    margin: 0;
 }
-
+.navbar-default{
+  background-color: rgb(206, 206, 206) !important;
+}
 .navbar-brand{
     font-family: "Luckiest Guy", cursive;
     padding-left: 30px;
