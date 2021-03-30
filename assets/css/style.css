@@ -287,19 +287,35 @@ li {
         padding-top: 150px;
     }
 
+    .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 0px;
+    }
     .card-settings {
     z-index: 1;
     background-color: gray;
     opacity: .8;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
 }
     .section {
-        height: 100vh;
-        width: 100%;
+       
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
     }
 
     .game-info-container {
