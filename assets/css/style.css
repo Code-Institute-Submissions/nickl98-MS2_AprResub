@@ -287,15 +287,7 @@ li {
         padding-top: 150px;
     }
 
-    .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: 0px;
-    }
+  
     .card-settings {
     z-index: 1;
     background-color: gray;
