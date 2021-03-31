@@ -153,9 +153,25 @@ html,body
     position: absolute;
     left: 0;
     top: 0;
+    margin-bottom: 15px;
 }
-#navbarNavAltMarkup{
-    z-index: 2;
+#navbarDropdown {
+    font-family: "Luckiest Guy", cursive;
+    padding-left: 30px;
+    padding-right: 100px;
+    color: black;
+    text-shadow: none;
+    font-size: 20px;
+}
+
+.dropdown-item {
+    font-family: "Luckiest Guy", cursive;
+    padding-left: 25px;
+    color: gray;
+    text-shadow: none;
+}
+.navbar-nav {
+    margin-left: auto;
 }
 .navbar-default{
   background-color: rgb(206, 206, 206) !important;
@@ -163,6 +179,7 @@ html,body
 .navbar-brand{
     font-family: "Luckiest Guy", cursive;
     padding-left: 30px;
+    font-size: 35px;
 }
 .nav-link{
     font-family: "Luckiest Guy", cursive;
@@ -312,6 +329,7 @@ li {
     }
 
     .game-info-container {
+        padding-top: 20px;
         padding-left: 20px;
         padding-right: 20px;
     }
