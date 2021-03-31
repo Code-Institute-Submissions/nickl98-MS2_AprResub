@@ -146,12 +146,16 @@ html,body
 /**** Nav Bar elements**/
 
 .navbar{
-    z-index: 1;
+    
+    z-index: 9999;
     width: 100%;
     margin: 0;
     position: absolute;
     left: 0;
     top: 0;
+}
+#navbarNavAltMarkup{
+    z-index: 2;
 }
 .navbar-default{
   background-color: rgb(206, 206, 206) !important;
