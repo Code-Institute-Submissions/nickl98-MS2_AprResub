@@ -143,7 +143,9 @@ html,body
     zoom: .85;
 }
 /**** Nav Bar elements***/
-
+.container {
+    width: 100% ;
+}
 .navbar{
     z-index: 1;
     width: 100%;
