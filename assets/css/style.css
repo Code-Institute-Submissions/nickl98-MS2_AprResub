@@ -245,7 +245,22 @@ li {
 }
 
 .box-content {
-    padding-top: 15px;
+    padding-top: 35px;
+    font-size: 20px;
+    font-family: "Luckiest Guy", cursive;
+    color: #fff;
+    text-shadow: 2px 2px #663399;
+    line-height: 35px;
+}
+
+.next-page {
+    
+   height:30px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
 }
 /***Card settings buttons***/
 .btn-color {
