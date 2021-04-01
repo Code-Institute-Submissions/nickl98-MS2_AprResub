@@ -7,7 +7,7 @@
     color: #fff;
     text-shadow: 2px 2px #663399;
     text-align: center;
-    font-size: 5em;
+    font-size: 45px;
     z-index: 1;
     margin: 0 auto;
 }
@@ -39,7 +39,7 @@ html,body
 }
 
 .video-container {
-     position: fixed;
+    position: fixed;
    top: 0; 
    right: 0; 
    bottom: 0; 
@@ -216,14 +216,14 @@ html,body
 text-align: center;
   z-index: 1;
   background-color: rgb(206, 206, 206);
-  opacity: 0.8;
+  opacity: 0.95;
   height: 50vh;
 }
 
 .card-settings {
     z-index: 1;
     background-color: gray;
-    opacity: .8;
+    opacity: .95;
     margin: 0 auto;
     padding-left: 150px;
     padding-right: 150px;
@@ -242,6 +242,10 @@ li {
     text-shadow: 2px 2px #663399;
     padding-top: 15px;
 
+}
+
+.box-content {
+    padding-top: 15px;
 }
 /***Card settings buttons***/
 .btn-color {

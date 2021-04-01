@@ -44,6 +44,9 @@ function mute(){
 
     }
 
+var aduio = document.getElementById('background_audio');
+aduio.volume = .01;
+
 class MixOrMatch {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
