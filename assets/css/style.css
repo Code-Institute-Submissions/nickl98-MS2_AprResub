@@ -312,7 +312,7 @@ li {
 
 /**Media Quries***/
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
     .page-title {
         display: none;
         font-family: "Luckiest Guy", cursive;
@@ -366,7 +366,7 @@ li {
     left:50%;
 }
     .box-content {
-    font-size: 15px;
+    font-size: 12px;
     font-family: "Luckiest Guy", cursive;
     color: #fff;
     text-shadow: 2px 2px #663399;
@@ -385,11 +385,12 @@ li {
     #direction .card-settings-wrapper {
       margin: auto;
       margin-top: 50px;   
-      padding-top: 100px; 
+      padding-top: 50px; 
     }
     .card-settings-wrapper {
         margin: auto;
-        
+        width: 100%;
+        padding-top: -15px;
        
     }
 
@@ -399,7 +400,7 @@ li {
         grid-template-columns: repeat(4, 4);
         margin: 0 auto;
         justify-content: center;
-        zoom: .65;
+        zoom: .55;
     }
 
     .card-info-container {
@@ -413,7 +414,7 @@ li {
         text-align: center;
     }
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
 
     .page-title {
         font-family: "Luckiest Guy", cursive;
@@ -460,7 +461,7 @@ li {
         text-align: center;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1280px) {
  .page-title {
         font-family: "Luckiest Guy", cursive;
         color: #fff;
