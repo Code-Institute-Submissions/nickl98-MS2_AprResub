@@ -136,7 +136,7 @@ html,body
     margin: 50px auto;
     justify-content: center;
     perspective: 500px;
-    zoom: .85;
+    
 }
 
 /**** Nav Bar elements**/
@@ -288,7 +288,7 @@ li {
 }
 
 .overlay-text-small {
-    font-size: 0.2em;
+    font-size: 0.1em;
     text-align: center;
 }
 @keyframes overlay-grow {
@@ -404,7 +404,7 @@ li {
         grid-template-columns: repeat(4, 4);
         margin: 0 auto;
         justify-content: center;
-        zoom: .55;
+        zoom: .45;
     }
 
     .card-info-container {
@@ -413,12 +413,45 @@ li {
         padding-right: 35px;
         padding-left: 35px;
     }
-    .overlay-text {
-        font-size: 10px;
-        text-align: center;
-    }
+    .overlay-text-small {
+    font-size: 0.1em;
+    text-align: center;
+}
 
-    
+    #click-to-start .overlay-text{
+        font-size: .1em;
+    }
+/***Desktop **/
+@media (min-width: 1600px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 4);
+        margin: 0 auto;
+        justify-content: center;
+        zoom: .5;
+    }
+}
+
+/***Ipad **/
+@media (min-width: 768px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 4);
+        margin: 0 auto;
+        justify-content: center;
+        zoom: .65;
+    }
+}
+/***Laptop **/
+@media (min-width: 1280px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 4);
+        margin: 0 auto;
+        justify-content: center;
+        zoom: .65;
+    }
+}
 }
 
 
