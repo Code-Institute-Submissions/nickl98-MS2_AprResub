@@ -312,7 +312,7 @@ li {
 
 /**Media Quries***/
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
     .page-title {
         display: none;
         font-family: "Luckiest Guy", cursive;
