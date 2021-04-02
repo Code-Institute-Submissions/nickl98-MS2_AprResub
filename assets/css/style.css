@@ -257,9 +257,10 @@ li {
     position:relative;
     top:50%; 
     left:50%;
-    color: #663399;
-    font-family: "Luckiest Guy", cursive;
-    background-color: gray;
+   color: #fff;
+   font-family: "Luckiest Guy", cursive;
+    text-shadow: 2px 2px #663399;
+    background-color: rgb(206, 206, 206);
 }
 /***Card settings buttons***/
 
@@ -299,6 +300,15 @@ li {
         font-size: 10em;
     }
 }
+
+
+
+
+
+
+
+
+
 
 /**Media Quries***/
 
@@ -356,7 +366,7 @@ li {
     left:50%;
 }
     .box-content {
-    font-size: 12px;
+    font-size: 13px;
     font-family: "Luckiest Guy", cursive;
     color: #fff;
     text-shadow: 2px 2px #663399;
@@ -382,6 +392,8 @@ li {
         margin: auto;
         width: 100%;
         margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
        
     }
 
