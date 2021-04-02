@@ -439,7 +439,7 @@ li {
         grid-template-columns: repeat(4, 4);
         margin: 0 auto;
         justify-content: center;
-        zoom: .65;
+        zoom: .85;
     }
 }
 /***Laptop **/
