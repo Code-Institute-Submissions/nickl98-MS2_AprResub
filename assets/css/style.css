@@ -52,11 +52,7 @@ html,body
 }
 
 
-.direction_btn {
-    z-index: 1;
-    position: relative;
-    text-align: center;
-}
+
 
 .game-info-container {
     grid-column: 1 / -1;
@@ -261,17 +257,11 @@ li {
     position:relative;
     top:50%; 
     left:50%;
+    color: #663399;
+    font-family: "Luckiest Guy", cursive;
+    background-color: gray;
 }
 /***Card settings buttons***/
-.btn-color {
-    color: #663399;
-    
-}
-
-.button-container {
-    text-align: center;
-    padding-bottom: 15px;
-}
 
 /*** Text Overlays **/
 
@@ -370,9 +360,10 @@ li {
     font-family: "Luckiest Guy", cursive;
     color: #fff;
     text-shadow: 2px 2px #663399;
-    padding-top: 100px;
+    padding-top: 75px;
     position:relative;
     margin-left: 15px;
+    width: 100%;
   
     }
     li {
@@ -390,7 +381,7 @@ li {
     .card-settings-wrapper {
         margin: auto;
         width: 100%;
-        padding-top: -15px;
+        margin-top: 0px;
        
     }
 
