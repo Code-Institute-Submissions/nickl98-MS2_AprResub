@@ -375,6 +375,8 @@ li {
     position:relative;
     margin-left: 15px;
     width: 100%;
+    padding-left: 10px;
+    padding-right: 18px;
   
     }
     li {
@@ -387,7 +389,8 @@ li {
     #direction .card-settings-wrapper {
       margin: auto;
       margin-top: 50px;   
-      padding-top: 50px; 
+      padding-top: 50px;
+      padding-left: 15px; 
     }
     .card-settings-wrapper {
         margin: auto;
@@ -439,7 +442,7 @@ li {
         grid-template-columns: repeat(4, 4);
         margin: 0 auto;
         justify-content: center;
-        zoom: .65;
+        zoom: .85;
     }
 }
 /***Laptop **/
@@ -452,6 +455,8 @@ li {
         zoom: .65;
     }
 }
+
+
 }
 
 
