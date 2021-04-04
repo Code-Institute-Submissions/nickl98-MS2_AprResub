@@ -360,7 +360,7 @@ li {
 
     .card-container {
         display: grid;
-        grid-template-columns: repeat(4, 4);
+        grid-template-columns: repeat(4, auto);
         margin: 0 auto;
         justify-content: center;
         zoom: 0.45;
@@ -383,7 +383,7 @@ li {
     @media (min-width: 1600px) {
         .card-container {
             display: grid;
-            grid-template-columns: repeat(4, 4);
+            grid-template-columns: repeat(4, auto);
             margin: 0 auto;
             justify-content: center;
             zoom: 0.5;
@@ -417,7 +417,7 @@ li {
     @media (min-width: 768px) {
         .card-container {
             display: grid;
-            grid-template-columns: repeat(4, 4);
+            grid-template-columns: repeat(4, auto);
             margin: 0 auto;
             justify-content: center;
             zoom: 0.85;
@@ -484,7 +484,7 @@ li {
     @media (min-width: 1280px) {
         .card-container {
             display: grid;
-            grid-template-columns: repeat(4, 4);
+            grid-template-columns: repeat(4, auto);
             margin: 0 auto;
             justify-content: center;
             zoom: 0.65;
