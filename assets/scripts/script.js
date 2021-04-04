@@ -44,7 +44,8 @@ function mute(){
 
     }
 
-
+var audio = document.getElementById('background_audio');
+  audio.volume = 0.2;
 
 class MixOrMatch {
     constructor(totalTime, cards) {
