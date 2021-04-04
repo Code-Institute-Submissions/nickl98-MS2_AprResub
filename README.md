@@ -4,7 +4,7 @@
 
 For this project I decied to make a fun lttle matching game with diffrent types of technology you come across in your day-to-day life. You got 100 seconds to match all the cards with its correspoding cards. At first glacne you may think its not the hardest game you may come across however, the cards change location everytime you start over. I also added in some realxing low-fi background music; don't worry if your not into low-fi you have the option to mute! Well, enjoy take a break and enjoy the game!
  
-<h2 align="center"><img url = "https://github.com/nickl98/MS2/blob/master/assets/pictures/Screenshots/ResponsivePicture.png?raw=true"></h2>
+<h2 align="center"><img src = "assets/pictures/Screenshots/ResponsivePicture.png"></h2>
 
 ## UX
 
